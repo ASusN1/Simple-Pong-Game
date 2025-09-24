@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Pong Game</h1>
+    <div id="menu">
+        <button id="startBtn">Play</button>
+        <button id="rulesBtn">Rules</button>
+        <button id="highScoreBtn">Highest Score</button>
+    </div>
+    <div id="rulesBox" class="hidden">
+        <h2>Rules</h2>
+        <ul>
+            <li>Move your paddle with your mouse to hit the ball.</li>
+            <li>Prevent the ball from passing your side.</li>
+            <li>Score a point when the ball passes the AI paddle!</li>
+            <li>The game ends when you miss the ball.</li>
+        </ul>
+        <button id="closeRulesBtn">Back</button>
+    </div>
+    <div id="highScoreBox" class="hidden">
+        <h2>Highest Score</h2>
+        <div id="highScoreValue">0</div>
+        <button id="closeHighScoreBtn">Back</button>
+    </div>
+    <div id="gameOverBox" class="hidden">
+        <h2>Game Over!</h2>
+        <div id="finalScore"></div>
+        <button id="restartBtn">Restart</button>
+        <button id="menuBtn">Main Menu</button>
+    </div>
+    <canvas id="pong" width="800" height="500" class="hidden"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
